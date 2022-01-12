@@ -1,0 +1,410 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <world name="default">
+    <!-- A global light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://asphalt_plane_long</uri>
+      <pose>10 0 0 0 0 0</pose>
+    </include>
+
+    <physics name='default_physics' default='0' type='ode'>
+      <gravity>0 0 -9.8066</gravity>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>10</iters>
+          <sor>1.3</sor>
+          <use_dynamic_moi_rescaling>0</use_dynamic_moi_rescaling>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>0.2</erp>
+          <contact_max_correcting_vel>100</contact_max_correcting_vel>
+          <contact_surface_layer>0.001</contact_surface_layer>
+        </constraints>
+      </ode>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>250</real_time_update_rate>
+      <magnetic_field>6.0e-6 2.3e-5 -4.2e-5</magnetic_field>
+    </physics>
+
+    <!-- Models -->
+    <include>
+      <uri>model://obs06</uri>
+      <pose>3.289879 -3.381933 0 0 0 3.139819</pose>
+    </include>
+
+    <include>
+      <uri>model://obs05</uri>
+      <pose>3.243293 -0.128948 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs051</uri>
+      <pose>5.140757 -0.747989 0 0 0 1.571485</pose>
+    </include>
+
+    <include>
+      <uri>model://obs052</uri>
+      <pose>5.547875 1.775697 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs053</uri>
+      <pose>3.237051 1.549672 0 0 0 1.571485</pose>
+    </include>
+
+    <include>
+      <uri>model://obs01</uri>
+      <pose>3.709147 4.260170 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs11</uri>
+      <pose>8.718191 1.825957 0 -3.156652 0 1.569953</pose>
+    </include>
+
+    <include>
+      <uri>model://obs09</uri>
+      <pose>9.993614 -1.145372 0 0 0 1.569953</pose>
+    </include>
+
+    <include>
+      <uri>model://obs10</uri>
+      <pose>11.893776 -4.174741 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs08</uri>
+      <pose>12.738840 -0.189619 0 0 0 1.569587</pose>
+    </include>
+
+    <include>
+      <uri>model://obs02</uri>
+      <pose>16.178386 4.442025 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs04</uri>
+      <pose>19.27071 2.981382 0 0 0 1.572588</pose>
+    </include>
+
+    <include>
+      <uri>model://obs03</uri>
+      <pose>18.215857 -1.527564 0 0 0 0</pose>
+    </include>
+
+    <include>
+      <uri>model://obs031</uri>
+      <pose>18.797939 -3.530739 0 0 0 3.1415</pose>
+    </include>
+
+    <model name='ARUCO01'>
+      <pose>0.5 -1.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco1</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO02'>
+      <pose>18.5 -2.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco2</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO03'>
+      <pose>7.5 -4.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco3</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO04'>
+      <pose>1.5 2.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco4</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO05'>
+      <pose>4.5 0.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco5</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO06'>
+      <pose>17.5 2.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco6</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO07'>
+      <pose>14.75 -4.15 0.71 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco7</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO08'>
+      <pose>9.48 2.9 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco8</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO09'>
+      <pose>12.5 4.5 0.12 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco9</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name='ARUCO10'>
+      <pose>3.6 -3.6 2.01 0 0 1.57</pose>
+      <static>true</static>
+      <link name="build_link">
+        <collision name='build_collision'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.001</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name='build_visual'>
+          <geometry>
+            <box>
+              <size>0.5 0.5 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://build/materials/scripts</uri>
+              <uri>model://build/materials/textures</uri>
+              <name>buildMat/aruco10</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <include>
+      <uri>model://lateral_grid</uri>
+      <pose>10 0 0 0 0 0</pose>
+    </include>
+
+
+
+  </world>
+</sdf>

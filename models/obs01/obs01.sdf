@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name='obs01'>
+    <static>true</static>
+    <link name="link">
+      <collision name='collision'>
+        <geometry>
+          <mesh>
+            <uri>model://obs01/mesh/Obs01.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+          </mesh>
+        </geometry>
+      </collision>
+
+      <visual name='visual'>
+        <geometry>
+          <mesh>
+            <uri>model://obs01/mesh/Obs01.stl</uri>
+            <scale>0.01 0.01 0.01</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://obs01/materials/scripts</uri>
+            <uri>model://obs01/materials/textures</uri>
+            <name>buildMat/Tex1</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

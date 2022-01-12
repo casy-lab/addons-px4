@@ -1,0 +1,435 @@
+material buildMat/Tex1
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex1.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex2
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex2.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex3
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex3.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+
+material buildMat/Tex4
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex4.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+
+material buildMat/Tex5
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex5.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex6
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex6.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex7
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex7.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex8
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex8.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex9
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex9.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex10
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex10.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex11
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex11.png
+				scale 0.01 0.01
+			}
+		}
+	}
+}
+
+material buildMat/Tex12
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex12.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/Tex13
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture tex13.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr1
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00001.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr2
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00002.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr3
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00003.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr4
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00004.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr5
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00005.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr6
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00006.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr7
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00007.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr8
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00008.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr9
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00009.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr10
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00010.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr11
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00011.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr12
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00012.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr13
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00013.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+material buildMat/qr14
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			texture_unit
+			{
+				texture 00014.png
+				scale 1 1
+			}
+		}
+	}
+}
+
+

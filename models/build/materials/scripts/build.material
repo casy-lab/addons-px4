@@ -1,0 +1,149 @@
+material buildMat/aruco1
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco1.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco2
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco2.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco3
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco3.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco4
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco4.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco5
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco5.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco6
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco6.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco7
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco7.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco8
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco8.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco9
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco9.png
+        scale 1 1
+      }
+    }
+  }
+}
+
+material buildMat/aruco10
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture ../textures/aruco10.png
+        scale 1 1
+      }
+    }
+  }
+}
